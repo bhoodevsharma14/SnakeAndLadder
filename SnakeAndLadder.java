@@ -20,6 +20,8 @@ public class SnakeAndLadder {
 			{
 				case LADDER: 
 							player1Position+=dice;
+							if(player1Position>100)
+								player1Position-=dice;
 							break;
 				case SNAKE:
 							player1Position-=dice;
