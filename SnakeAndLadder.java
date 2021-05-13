@@ -25,6 +25,9 @@ public class SnakeAndLadder {
 							player1Position-=dice;
 							break;		
 			}
+			
+			if (player1Position<0)
+				player1Position=0;
 		}
 	}
 }
