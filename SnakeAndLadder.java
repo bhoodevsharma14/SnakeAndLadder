@@ -25,10 +25,6 @@ public class SnakeAndLadder {
 							player1Position-=dice;
 							break;		
 			}
-//			System.out.println(" dice "+dice+" ,move "+move+" position: "+player1Position);
-			if (player1Position<0)
-				player1Position=0;
-			System.out.println(" dice "+dice+" ,move "+move+" position: "+player1Position);
 		}
 	}
 }
