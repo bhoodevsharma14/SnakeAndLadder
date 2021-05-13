@@ -7,7 +7,7 @@ public class SnakeAndLadder {
 	{
 		System.out.println("Welcome to Snake And Ladder Simulator");
 		
-		int player1Position=0;
+		int player1Position=0,rollCounter=0;
 		
 		while(player1Position<100)
 		{
@@ -15,6 +15,8 @@ public class SnakeAndLadder {
 			int dice= (int) Math.floor(Math.random()*10)%6 +1;
 			
 			int move= (int) Math.floor(Math.random()*10)%3;
+			
+			rollCounter++;
 			
 			switch (move)
 			{
@@ -30,6 +32,8 @@ public class SnakeAndLadder {
 			
 			if (player1Position<0)
 				player1Position=0;
+			
+			System.out.println("Dice Rolled for : " +rollCounter+" Player 1 Position is : "+player1Position);
 		}
 	}
 }
